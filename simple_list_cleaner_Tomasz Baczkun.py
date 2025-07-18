@@ -1,8 +1,4 @@
 
-# I decided to design a function that would easily extract the necessary information, so either words or number, from the items of a given list
-# the reasoning is that I have encountered variables as 'fc bayerng modrich.12-05-2012' way too often, so a function that would quickly separate such a thing
-# would come in handy
-
 dirty_list = ['bayern.12-05-2012', 'borucia dortmund.13-07.2023', 'anamanta di caltino .12-03;2019']
 
 import re
@@ -65,5 +61,4 @@ print(extract_relevant.__doc__)
 
 print(extract_relevant(list = dirty_list, symbols = 'numbers', joiner = '.'))
 
-#As this is the last submission, I just wanted to say that the assignments you have prepared were amazing, and I feel like I really understood programming a bit better.
-#Thank you :))
+
