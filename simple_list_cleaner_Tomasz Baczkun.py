@@ -9,7 +9,6 @@ import re
 
 def extract_symbols_entry(entry, symbols, joiner, exception):
     if symbols == 'characters':
-        #words = re.findall(r'[a-zA-Z]+', entry)
         words = re.findall(fr'[^\W\d_]+|{exception}+', entry)
         result = joiner.join(words)
         result = result.lower()
